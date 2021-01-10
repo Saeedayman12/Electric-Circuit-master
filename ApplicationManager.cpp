@@ -20,6 +20,7 @@
 #include"Actions/ActionAmmeter.h"
 #include"Actions/ActionVoltmeter.h"
 #include"Actions/ActionDesign.h"
+#include"Actions/ActionAddModule1.h"
 #include <iostream>
 #include<cmath>
 
@@ -309,7 +310,7 @@ void ApplicationManager::ExecuteAction(ActionType ActType)
 		break;
 	case SIM_MODE:
 		pAct = new ActionSwitchSimulation(this);
-		break; //TODO
+		break; 
 	case AMMETER:
 		pAct = new ActionAmmeter(this);
 		break;
@@ -318,6 +319,9 @@ void ApplicationManager::ExecuteAction(ActionType ActType)
 		break;
 	case DESIGNN:
 		pAct = new ActionDesign(this);
+		break;
+	case MODULE1:
+		pAct = new ActionAddModule1(this);
 		break;
 	case EXIT:
 		pAct = new ExitAction(this);	

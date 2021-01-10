@@ -222,6 +222,12 @@
     <ClCompile Include="Actions\ActionVoltmeter.cpp">
       <Filter>Actions</Filter>
     </ClCompile>
+    <ClCompile Include="Components\Module1.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Actions\ActionAddModule1.cpp">
+      <Filter>Actions</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Actions\Action.h">
@@ -377,6 +383,12 @@
       <Filter>Actions</Filter>
     </ClInclude>
     <ClInclude Include="Actions\ActionVoltmeter.h">
+      <Filter>Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="Components\Module1.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Actions\ActionAddModule1.h">
       <Filter>Actions</Filter>
     </ClInclude>
   </ItemGroup>

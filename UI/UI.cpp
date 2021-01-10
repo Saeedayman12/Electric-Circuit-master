@@ -120,18 +120,14 @@ ActionType UI::GetUserAction()
 			case ITM_RES:	return ADD_RESISTOR;
 			case ITM_BULB:	return ADD_BULB;
 			case ITM_BUZZER:return ADD_BUZZER;
-		//	case ITM_LABEL: return ADD_Label;
 			case ITM_FUZE:return ADD_FUZE;
 			case ITM_SWITCH:return ADD_SWITCH;
 			case ITM_BATTERY:return ADD_BATTERY;
 			case ITM_GROUND:return ADD_GROUND;
 			case ITM_CONNECTION: return ADD_CONNECTION;
 			case ITM_DROP: return DROP_DOWN;
-		/*	case ITM_EDIT:return EDIT;
-			case ITM_DELETE:return DEL;
-			case ITM_SAVE: return SAVE;
-			case ITM_LOAD: return LOAD;*/
-			case ITM_SIMU: return SIM_MODE;
+			case ITM_MODULE1: return MODULE1;
+			case ITM_SIMU: return SIM_MODE;	
 			case ITM_EXIT:	return EXIT;	
 			
 			default: return DSN_TOOL;	//A click on empty place in desgin toolbar
@@ -304,6 +300,7 @@ void UI::CreateDesignToolBar()
 	MenuItemImages[ITM_SWITCH] = "images\\Menu\\Menu_Switch.jpg";
 	MenuItemImages[ITM_EXIT] = "images\\Menu\\Menu_Exit.jpg";
 	MenuItemImages[ITM_CONNECTION] = "images\\Menu\\Menu_Wire.jpg";
+	MenuItemImages[ITM_MODULE1] = "images\\Menu\\Menu_Module1.jpg";
 	MenuItemImages[ITM_SIMU] = "images\\Menu\\Menu_Play.jpg";
 	MenuItemImages[ITM_DROP] = "images\\Menu\\Menu_DropDown.jpg";
 	
@@ -365,6 +362,17 @@ void UI::DrawResistor(const GraphicsInfo &r_GfxInfo, bool selected) const
 		pWind->DrawImage(ResImage, r_GfxInfo.PointsList[0].x, r_GfxInfo.PointsList[0].y, COMP_WIDTH, COMP_HEIGHT);
 	
 }
+
+void UI::DrawModule1(const GraphicsInfo& r_GfxInfo, bool selected) const
+{
+	string Module1Image;
+		if (selected)
+			Module1Image = "Images\\Comp\\Module1_HI.jpg";	
+		else
+			Module1Image = "Images\\Comp\\Module1.jpg";
+	pWind->DrawImage(Module1Image, r_GfxInfo.PointsList[0].x, r_GfxInfo.PointsList[0].y, COMP_WIDTH, COMP_HEIGHT);
+}
+
 void UI::DrawBattery(const GraphicsInfo& r_GfxInfo, bool selected) const
 {
 

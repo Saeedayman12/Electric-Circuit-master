@@ -117,6 +117,7 @@
     <ClCompile Include="Actions\ActionAddFuze.cpp" />
     <ClCompile Include="Actions\ActionAddGround.cpp" />
     <ClCompile Include="Actions\ActionAddLabel.cpp" />
+    <ClCompile Include="Actions\ActionAddModule1.cpp" />
     <ClCompile Include="Actions\ActionAddRes.cpp" />
     <ClCompile Include="Actions\ActionAddSwitch.cpp" />
     <ClCompile Include="Actions\ActionAmmeter.cpp" />
@@ -173,6 +174,7 @@
     <ClCompile Include="Components\Component.cpp" />
     <ClCompile Include="Components\Fuze.cpp" />
     <ClCompile Include="Components\Ground.cpp" />
+    <ClCompile Include="Components\Module1.cpp" />
     <ClCompile Include="Components\Resistor.cpp" />
     <ClCompile Include="Components\Switch.cpp" />
     <ClCompile Include="Connections\Connection.cpp" />
@@ -188,6 +190,7 @@
     <ClInclude Include="Actions\ActionAddFuze.h" />
     <ClInclude Include="Actions\ActionAddGround.h" />
     <ClInclude Include="Actions\ActionAddLabel.h" />
+    <ClInclude Include="Actions\ActionAddModule1.h" />
     <ClInclude Include="Actions\ActionAddRes.h" />
     <ClInclude Include="Actions\ActionAddSwitch.h" />
     <ClInclude Include="Actions\ActionAmmeter.h" />
@@ -228,6 +231,7 @@
     <ClInclude Include="Components\Component.h" />
     <ClInclude Include="Components\Fuze.h" />
     <ClInclude Include="Components\Ground.h" />
+    <ClInclude Include="Components\Module1.h" />
     <ClInclude Include="Components\Resistor.h" />
     <ClInclude Include="Components\Switch.h" />
     <ClInclude Include="Connections\Connection.h" />

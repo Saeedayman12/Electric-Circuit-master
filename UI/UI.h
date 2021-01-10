@@ -37,12 +37,13 @@ class UI
 		ITM_SWITCH,
 		ITM_BATTERY,
 		ITM_GROUND,
+		ITM_MODULE1,
 		ITM_CONNECTION,
 		ITM_DROP,
 		//Exit item
 		ITM_SIMU,
 		ITM_EXIT,
-		ITM_DSN_CNT	
+		ITM_DSN_CNT
 		//no. of design menu items ==> This should be the last line in this enum
 	};
 
@@ -138,6 +139,7 @@ public:
 	void DrawFuze(const GraphicsInfo& r_GfxInfo, bool selected = false) const;
 	void DrawBulb(const GraphicsInfo& r_GfxInfo, bool selected = false) const;
 	void DrawBuzzer(const GraphicsInfo& r_GfxInfo, bool selected = false) const;
+	void DrawModule1(const GraphicsInfo& r_GfxInfo, bool selected = false) const;
 
 	///TODO: Make similar functions for drawing all other components, connections, .. etc
 
